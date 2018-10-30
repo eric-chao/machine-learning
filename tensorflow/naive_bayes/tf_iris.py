@@ -29,7 +29,7 @@ class TFNaiveBayesClassifier:
         points_by_class = np.array([
             [x for x, t in zip(X, y) if t == c]
             for c in unique_y])
-
+        
         # Estimate mean and variance for each class / feature
         # shape: nb_classes * nb_features
         mean, var = tf.nn.moments(tf.constant(points_by_class), axes=[1])
