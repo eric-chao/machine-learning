@@ -29,7 +29,7 @@ class TFNaiveBayesClassifier:
         points_by_class = np.array([
             [x for x, t in zip(X, y) if t == c]
             for c in unique_y])
-        
+
         # Estimate mean and variance for each class / feature
         # shape: nb_classes * nb_features
         mean, var = tf.nn.moments(tf.constant(points_by_class), axes=[1])
@@ -79,12 +79,13 @@ if __name__ == '__main__':
     
     s = tf.Session()
     Z = s.run(tf_nb.predict(np.c_[xx.ravel(), yy.ravel()]))
+
     # Extract probabilities of class 2 and 3
     Z1 = Z[:, 1].reshape(xx.shape)
     Z2 = Z[:, 2].reshape(xx.shape)
 
     # Plot
-    fig = plt.figure(figsize=(5, 3.75))
+    fig = plt.figure(figsize=(10, 7.5))
     ax = fig.add_subplot(111)
 
     ax.scatter(X[:, 0], X[:, 1], c=y, cmap=plt.cm.Set1, edgecolor='k')

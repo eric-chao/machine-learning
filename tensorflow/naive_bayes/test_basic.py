@@ -9,6 +9,7 @@ basic test
 
 """
 
+import tensorflow as tf
 import numpy as np
 
 # test 1
@@ -25,9 +26,6 @@ print(str)
 cate_data = [[1, 0], [2, 0], [3, 0], [1, 1], [2, 1], [3, 1], [1, 2], [3, 2], [2, 2]]
 catelog = [0, 0, 0, 1, 1, 1, 2, 2, 2]
 
-for x, t in zip(cate_data, catelog):
-    print(x, t)
-
-print(np.unique(catelog))
+# test - separated points by class
 result = np.array([[x for x, t in zip(cate_data, catelog) if t == c] for c in np.unique(catelog)])
 print(result)
