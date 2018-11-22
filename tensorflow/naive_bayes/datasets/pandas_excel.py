@@ -7,6 +7,7 @@ use pandas to read/write excel files.
 @author: zxj
 
 """
+from pandas_func import PostNormal
 import pandas as pd
 import numpy as np
 
@@ -35,14 +36,14 @@ def dataToFloat(xls_file, col_name):
     # column_set.sort()
     np.sort(column_set, axis=None, kind='quicksort', order=None)
 
-    index = 0.001
+    index = 6.001
     for data in column_set:
         # print(type(data))
-        print(str(data) + ',' + str(round(index,3)))
+        # print(str(data) + ',' + PostNormal(data) + ',' + str(round(index,3)))
+        print(PostNormal(data) + ',' + str(data))
         index = index + 0.001
 
 if __name__=='__main__':
-    # xls_file = r"/Users/adhoc-dev/Downloads/Books/adhoc/1.xls"
-    # df = getExcelDataFrame(xls_file)
-    phone_xls_file = r"./naive_bayes/datasets/phone.xls"
-    dataToFloat(phone_xls_file, '运营商')
+    xls_file = r"./naive_bayes/datasets/dict/phone.xls"
+    xls_file = r"./naive_bayes/datasets/source/all_rm_duplicated.xls"
+    dataToFloat(xls_file, 'POST')
