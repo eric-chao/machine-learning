@@ -36,7 +36,7 @@ def dfToMap(df, name='name', value='value'):
 def plot(column, title, x_label_dict):
     # parse data
     # 'PROVINCE','OPERATOR','CLUE','INDUSTRY','OWNER','POST','CATEGORY'
-    all_data = pd.read_csv('./naive_bayes/datasets/source/all_data.1.csv', header=0)
+    all_data = pd.read_csv('./naive_bayes/datasets/source/all_data.csv', header=0)
 
     # stat
     all_cate = all_data[[column, 'CATEGORY', 'ACCOUNTID']]
@@ -57,17 +57,13 @@ def plot(column, title, x_label_dict):
     all_total = all_total.set_index(all_index)
     
     # print
-    # print(all_rate)
-    # print(all_converted)
-    # print(all_result.index)
-    # print(all_total)
 
     # plot
     # all_result.diff().hist()
     # xticks = ['A', 'B', 'C', 'D', 'E', 'F', 'G']
     width = len(all_total['TOTAL'])
     fig = plt.figure(figsize=[width, 6])
-    ax1 = all_total.TOTAL.plot(kind='bar', y=[all_total['TOTAL']], color='xkcd:sky blue', legend=True)
+    ax1 = all_total.TOTAL.plot(kind='bar', color='xkcd:sky blue', legend=True)
     ax2 = all_total.SIGNED.plot(secondary_y=True, color='xkcd:mango', legend=True)
 
     for i, label in enumerate(list(all_total.index)):
@@ -88,7 +84,7 @@ def plot(column, title, x_label_dict):
     fig.savefig('./naive_bayes/stat.png')
 
 if __name__ == "__main__":
-    stat_key = 'PROVINCE'
+    stat_key = 'INDUSTRY'
     dict_file = './naive_bayes/datasets/dict/dict_%(name)s.csv'%{'name':stat_key.lower()}
     x_label_df = pd.read_csv(dict_file, header=0)
     x_label_dict = dfToMap(x_label_df, name='value', value='name')
