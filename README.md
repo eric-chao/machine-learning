@@ -24,8 +24,11 @@
 &ensp;&ensp;&ensp;&ensp;
 <img src="https://latex.codecogs.com/gif.latex?$$P(AB)=P(A|B)\cdot{P(B)}=P(B|A)\cdot{P(A)}$$">
 
-可知贝叶斯公式中的分子就是联合概率分布\\(P(C_k, X)\\)：
-&ensp;&ensp;&ensp;\\(P(C_k, X) = P(x_1|x_2,...,x_n, C_k)P(x_2|x_3,...,x_n, C_k)P(x_n|, C_k)P(C_k)\\)
+可知贝叶斯公式中的分子就是联合概率分布
+<img src="https://latex.codecogs.com/gif.latex?$$(P(C_k,X)$$">：
+
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://latex.codecogs.com/gif.latex?$$P(C_k,X)=P(x_1|x_2,...,x_n,C_k)P(x_2|x_3,...,x_n,C_k)P(x_n|,C_k)P(C_k)$$">：
 
 由贝叶斯假设(假设\\(x_1, x_2, x_3 ... x_n\\)互斥且构成一个完全事件)，可以得到：
 &ensp;&ensp;&ensp;\\(P(C_k, X) = P(x_1)P(x_2)...P(x_n)P(C_k)\\)
