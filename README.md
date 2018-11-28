@@ -57,10 +57,10 @@
 
 其中，
 
-&ensp;&ensp;&ensp;
+&ensp;&ensp;&ensp;&ensp;
 特征A在总体样本中出现200次，转化样本中出现80次；
 
-&ensp;&ensp;&ensp;
+&ensp;&ensp;&ensp;&ensp;
 特征B在总体样本中出现800次，转化样本中出现120次。
 
 转化概率用
