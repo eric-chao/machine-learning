@@ -1,11 +1,8 @@
 
-
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
-
 ## ***贝叶斯模型***
 
 
-样本集\\(X\\)，每个样本有\\(n\\)种可能出现的特征\\(X_i=\\{x_1, x_2, x_3 ... x_n\\}\\)和与之相对应的类别\\(C_i(i \in k)\\)。
+样本集$$X$$，每个样本有$n$种可能出现的特征\\(X_i=\\{x_1, x_2, x_3 ... x_n\\}\\)和与之相对应的类别\\(C_i(i \in k)\\)。
 
 贝叶斯公式：
 &ensp;&ensp;&ensp;\\(P(C_k|X) = \frac{P(C_k)P(X|C_k)}{P(X)}\\)
