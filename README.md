@@ -25,21 +25,31 @@
 <img src="https://latex.codecogs.com/gif.latex?$$P(AB)=P(A|B)\cdot{P(B)}=P(B|A)\cdot{P(A)}$$">
 
 可知贝叶斯公式中的分子就是联合概率分布
-<img src="https://latex.codecogs.com/gif.latex?$$(P(C_k,X)$$">：
+<img src="https://latex.codecogs.com/gif.latex?$$P(C_k,X)$$">：
 
 &ensp;&ensp;&ensp;&ensp;
 <img src="https://latex.codecogs.com/gif.latex?$$P(C_k,X)=P(x_1|x_2,...,x_n,C_k)P(x_2|x_3,...,x_n,C_k)P(x_n|,C_k)P(C_k)$$">：
 
-由贝叶斯假设(假设\\(x_1, x_2, x_3 ... x_n\\)互斥且构成一个完全事件)，可以得到：
-&ensp;&ensp;&ensp;\\(P(C_k, X) = P(x_1)P(x_2)...P(x_n)P(C_k)\\)
+由贝叶斯假设(假设
+<img src="https://latex.codecogs.com/gif.latex?$$x_1,x_2, x_3...x_n$$">
+互斥且构成一个完全事件)，可以得到：
 
-建模的目标是从每一个分类的概率\\(P_i(i \in k)\\)中取最值：
-&ensp;&ensp;&ensp;\\(Pi(C_k|x_1, x_2, x_3 ... x_n)\\)
+&ensp;&ensp;&ensp;
+<img src="https://latex.codecogs.com/gif.latex?$$P(C_k,X)=P(x_1)P(x_2)...P(x_n)P(C_k)$$">
+
+建模的目标是从每一个分类的概率
+<img src="https://latex.codecogs.com/gif.latex?$$P_i(i\ink)$$">
+中取最值：
+
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://latex.codecogs.com/gif.latex?$$P_i(C_k|x_1,x_2,x_3...x_n)$$">
 
 所以，在计算中贝叶斯公式中的分母可以去除。
 
 综上，计算模型可描述为如下公式：
-&ensp;&ensp;&ensp;\\(\arg_{k \in \\{1, ... k \\}} \max P(C_k)\prod\_{i=1}^{n}P(x_i|C_k)\\)
+
+&ensp;&ensp;&ensp;&ensp;
+<img src="https://latex.codecogs.com/gif.latex?$$\arg_{k\in\{1,...k\}}\maxP(C_k)\prod\_{i=1}^{n}P(x_i|C_k)$$">
 
 ## ***样例DEMO***
 
