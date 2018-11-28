@@ -1,7 +1,6 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 
 ## ***贝叶斯模型***
-
 
 样本集$$X$$，每个样本有$n$种可能出现的特征X_i=\{x\_1, x\_2, x\_3 ... x\_n\}和与之相对应的类别\\(C_i(i \in k)\\)。
 
