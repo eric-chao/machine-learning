@@ -5,7 +5,7 @@
 每个样本有
 <img src="https://latex.codecogs.com/gif.latex?$$n$$">
 种可能出现的特征
-<img src="https://latex.codecogs.com/gif.latex?$$X_i=\{x_1, x_2, x_3 ... x_n\}$$">
+<img src="https://latex.codecogs.com/gif.latex?$$X_i = {x_1, x_2, x_3 ... x_n}$$">
 和与之相对应的类别
 <img src="https://latex.codecogs.com/gif.latex?$$C_i(i \in k)$$">。
 
