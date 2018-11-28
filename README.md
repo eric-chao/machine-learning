@@ -68,26 +68,26 @@
 表示，则有：
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?$$P(C)=200/1000=0.2,P(-C)=(1000-200)/1000=0.8$$">
+<img src="https://latex.codecogs.com/gif.latex?P(C)=200/1000=0.2,P(-C)=(1000-200)/1000=0.8">
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?$$P(A)=200/1000=0.2,P(A|C)=80/200=0.4,P(A|-C)=(200-80)/800=0.15$$">
+<img src="https://latex.codecogs.com/gif.latex?P(A)=200/1000=0.2,P(A|C)=80/200=0.4,P(A|-C)=(200-80)/800=0.15">
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?$$P(B)=800/1000=0.8,P(B|C)=120/200=0.6,P(B|-C)=(800-120)/800=0.85$$">
+<img src="https://latex.codecogs.com/gif.latex?P(B)=800/1000=0.8,P(B|C)=120/200=0.6,P(B|-C)=(800-120)/800=0.85">
 
 可得：
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?$$P(C|A,B)=P(C)*P(A|C)*P(B|C)=0.2*0.4*0.6=0.048$$">
+<img src="https://latex.codecogs.com/gif.latex?P(C|A,B)=P(C)*P(A|C)*P(B|C)=0.2*0.4*0.6=0.048">
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?$$P(-C|A,B)=P(-C)*P(A|-C)*P(B|-C)=0.8*0.15*0.85=0.102$$">
+<img src="https://latex.codecogs.com/gif.latex?P(-C|A,B)=P(-C)*P(A|-C)*P(B|-C)=0.8*0.15*0.85=0.102">
 
 归一化处理：
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?$$P(C|A,B):P(-C|A,B)=0.048:0.102=0.32:0.68$$">
+<img src="https://latex.codecogs.com/gif.latex?P(C|A,B):P(-C|A,B)=0.048:0.102=0.32:0.68">
 
 ## ***数据处理***
 + 数据去重，去除原始数据中出现的重复数据
