@@ -71,10 +71,12 @@
 <img src="https://latex.codecogs.com/gif.latex?P(C)=200/1000=0.2,P(-C)=(1000-200)/1000=0.8">
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?P(A)=200/1000=0.2,P(A|C)=80/200=0.4,P(A|-C)=(200-80)/800=0.15">
+<img src="https://latex.codecogs.com/gif.latex?P(A)=200/1000=0.2,P(A|C)=80/200=0.4,">
+<img src="https://latex.codecogs.com/gif.latex?P(A|-C)=(200-80)/800=0.15">
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?P(B)=800/1000=0.8,P(B|C)=120/200=0.6,P(B|-C)=(800-120)/800=0.85">
+<img src="https://latex.codecogs.com/gif.latex?P(B)=800/1000=0.8,P(B|C)=120/200=0.6,">
+<img src="https://latex.codecogs.com/gif.latex?P(B|-C)=(800-120)/800=0.85">
 
 可得：
 
