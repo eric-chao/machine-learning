@@ -1,6 +1,13 @@
 
 ## ***贝叶斯模型***
-样本集<img src="https://latex.codecogs.com/gif.latex?$$X$$">，每个样本有$n$种可能出现的特征X_i=\{x\_1, x\_2, x\_3 ... x\_n\}和与之相对应的类别\\(C_i(i \in k)\\)。
+样本集
+<img src="https://latex.codecogs.com/gif.latex?$$X$$">，
+每个样本有
+<img src="https://latex.codecogs.com/gif.latex?$$n$$">
+种可能出现的特征
+<img src="https://latex.codecogs.com/gif.latex?$$X_i=\{x_1, x_2, x_3 ... x_n\}$$">
+和与之相对应的类别
+<img src="https://latex.codecogs.com/gif.latex?$$C_i(i \in k)$$">。
 
 贝叶斯公式：
 &ensp;&ensp;&ensp;\\(P(C_k|X) = \frac{P(C_k)P(X|C_k)}{P(X)}\\)
