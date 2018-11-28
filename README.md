@@ -87,7 +87,7 @@
 归一化处理：
 
 &ensp;&ensp;&ensp;&ensp;
-<img src="https://latex.codecogs.com/gif.latex?$$P(C|A,B):P(-C|A,B)=0.048:0.102=0.32:0.68\$$">
+<img src="https://latex.codecogs.com/gif.latex?$$P(C|A,B):P(-C|A,B)=0.048:0.102=0.32:0.68$$">
 
 ## ***数据处理***
 + 数据去重，去除原始数据中出现的重复数据
