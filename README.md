@@ -10,7 +10,7 @@
 <img src="https://latex.codecogs.com/gif.latex?$$C_i(i%20\in%20k)$$">。
 
 贝叶斯公式：
-&ensp;&ensp;&ensp;<img src="https://latex.codecogs.com/gif.latex?$$P(C_k|X)%20=%20\frac{P(C_k)P(X|C_k)}{P(X)}$$">。
+&ensp;&ensp;&ensp;<img src="https://latex.codecogs.com/gif.latex?P(C_k|X)%20=%20\frac{P(C_k)P(X|C_k)}{P(X)}">。
 
 
 由条件概率公式：
